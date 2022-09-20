@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class one {
 	/*
-	 *@see ÎÄ¼þÄÚÈÝÈ¥ÖØ×°Ïä
+	 *@see ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½×°ï¿½ï¿½
 	 *@return map
 	 */
 	public Map WordList()throws Exception{
@@ -33,7 +33,7 @@ public class one {
 		  map.put(list[ii], list1);
 		  
 		 } 
-		//È«²¿µÄÎÄ±¾¼¯		
+		//È«ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½		
 		String allword = "all";
 		String[] array2 = AllfileString2();int i=0;
 		ArrayList<String> list1 = new ArrayList<String>();
@@ -53,24 +53,24 @@ public class one {
 	}
 	
 	/*
-	 *@see ÎÄ¼þÄÚÈÝ·Ö¸î
+	 *@see ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý·Ö¸ï¿½
 	 *@return arr
 	 */
 	public String[][] AllfileString()throws Exception{
 		File AllFile = new File("C://abc"+File.separator);
-		 String[] filecontent=new String[10];
-		String[][] arr = new String[10][];
+		 String[] filecontent=new String[11];
+		String[][] arr = new String[11][];
 		int i=0;
 		if(AllFile!=null){
-			System.out.println("ÎÄ¼þ»ñÈ¡³É¹¦£¡");
+			System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½È¡ï¿½É¹ï¿½ï¿½ï¿½");
 		}
 		for(File f:AllFile.listFiles())
 		{
 			filecontent[i]="";
-			//»ñÈ¡ÎÄ¼þ¶ÁÈ¡Ë³Ðò
+			//ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½È¡Ë³ï¿½ï¿½
 			//System.out.println(f.getName());
 			filecontent[i] = ReadAllFile(f);
-			//¼ì²éÎÄ¼þÄÚÈÝ¶ÁÈ¡
+			//ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡
 			//System.out.println(filecontent[i]+i);
 			i++;
 		}
@@ -93,18 +93,18 @@ public class one {
 		
 		int i=0;
 		if(AllFile!=null){
-			System.out.println("ÎÄ¼þ»ñÈ¡³É¹¦£¡");
+			System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½È¡ï¿½É¹ï¿½ï¿½ï¿½");
 		}
 		for(File f:AllFile.listFiles())
 		{
-			//»ñÈ¡ÎÄ¼þ¶ÁÈ¡Ë³Ðò
+			//ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½È¡Ë³ï¿½ï¿½
 			//System.out.println(f.getName());
 			filecontent += ReadAllFile(f);
-			//¼ì²éÎÄ¼þÄÚÈÝ¶ÁÈ¡
+			//ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡
 			//System.out.println(filecontent);
 			
 		}
-		//¼ì²éÕûÌåÎÄ¼þÄÚÈÝ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 		//System.out.println(filecontent);
 		    filecontent = filecontent.replace(" ", "");
 		    filecontent = filecontent.replace("", "");
@@ -112,7 +112,7 @@ public class one {
 		return arr; 
 	}
 	/*
-	 *@see ÎÄ¼þÄÚÈÝ¶ÁÈ¡
+	 *@see ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡
 	 *@return content
 	 */
 	public String ReadAllFile(File f)throws Exception{
